@@ -1,0 +1,56 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+}
+#app-container {
+  display: flex;
+  flex-flow: column nowrap;
+
+}
+
+#nav-container {
+  position: fixed;
+  border: 3px dotted red;
+}
+
+#links-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
+.navbar-link {
+  color: white;
+}
+
+#about {
+  background-color: navy;
+  height: 100vh;
+}
+
+#projects {
+  background-color:maroon;
+  height: 100vh;
+}
+
+#tech-stack {
+  background-color:skyblue;
+  height: 100vh;
+}
+
+#experience {
+  background-color: slategray;
+  height: 100vh;
+}
+
+#contact {
+  background-color: forestgreen;
+  height: 100vh;
+}
