@@ -50,10 +50,11 @@ body {
   border-radius: 3px 3px 3px 3px;
   margin-top: 2%;
   box-shadow: 0px 10px 25px 10px rgba(0, 0, 0, 0.24);
-  background-image: linear-gradient(-60deg,rgba(0, 0, 0, 0.335),rgba(112, 121, 129, 0.315), rgba(0, 0, 0, 0.514));
+  background-image: linear-gradient(-60deg,rgba(63, 63, 63, 0.281),rgba(246, 246, 246, 0.102), rgba(49, 49, 49, 0.178));
   border-bottom: 1px ridge rgb(44, 44, 44);
   border-right: 1px ridge rgb(44, 44, 44);
-  border-left: 1px ridge rgb(44, 44, 44)
+  border-left: 1px ridge rgb(44, 44, 44);
+  border-top: none;
 }
 
 .nav-link:link {
@@ -99,27 +100,27 @@ body {
 }
 
 #about {
-  background-color: rgb(21, 21, 133);
+  background-color: rgba(41, 66, 179, 0.76);
   height: 100vh;
 
 }
 
 #projects {
-  background-color:maroon;
+  background-color:rgba(138, 6, 6, 0.753);
   height: 100vh;
 }
 
 #tech-stack {
-  background-color:skyblue;
+  background-color:rgba(135, 207, 235, 0.753);
   height: 100vh;
 }
 
 #experience {
-  background-color: slategray;
+  background-color: rgba(112, 128, 144, 0.753);
   height: 100vh;
 }
 
 #contact {
-  background-color: forestgreen;
+  background-color: rgba(34, 139, 34, 0.753);
   height: 100vh;
 }
