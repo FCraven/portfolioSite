@@ -2,37 +2,106 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-wrap {
+  flex-flow: row wrap;
+}
+
+.row-nowrap{
+  flex-flow: row nowrap;
+}
+
+.column-wrap {
+  flex-flow: column wrap;
+}
+
+.column-nowrap{
+  flex-flow: column nowrap;
+}
+
 #app-container {
   display: flex;
   flex-flow: column nowrap;
-
+  justify-content: center;
 }
 
+/* NAVBAR */
 #nav-container {
   position: fixed;
-  border: 3px dotted red;
-}
-
-#links-list {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   align-items: center;
-  list-style-type: none;
-  width: 100%;
-  height: 100%;
-  background-color: blue;
+  left: 10%;
+  right: 10%;
+  background-color: rgba(49, 12, 12, 0.561);
+  top: 0vh;
+  border-radius: 3px 3px 3px 3px;
+  margin-top: 2%;
+  box-shadow: 0px 10px 25px 10px rgba(0, 0, 0, 0.24);
+  background-image: linear-gradient(-60deg,rgba(0, 0, 0, 0.335),rgba(112, 121, 129, 0.315), rgba(0, 0, 0, 0.514));
+  border-bottom: 1px ridge rgb(44, 44, 44);
+  border-right: 1px ridge rgb(44, 44, 44);
+  border-left: 1px ridge rgb(44, 44, 44)
 }
 
-.navbar-link {
+.nav-link:link {
   color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 1em;
+}
+
+.nav-link:visited {
+  color: white;
+  text-decoration: underline;
+  font-family: 'Lato', sans-serif;
+  background-color: slategrey;
+}
+
+.nav-link:hover {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  background-color: rgba(211, 211, 211, 0.356);
+  transform: scale(1.2,1.2);
+  border: 1px groove white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-shadow: 0px 2px 3px black;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: all .2s ease;
+}
+.nav-link:focus {
+  background-color: black;
+}
+
+.nav-link:active {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px black;
+  transform: scale(1.15,1.15);
 }
 
 #about {
-  background-color: navy;
+  background-color: rgb(21, 21, 133);
   height: 100vh;
+
 }
 
 #projects {
