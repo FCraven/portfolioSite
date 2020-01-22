@@ -74,17 +74,40 @@
 <!-- EXPERIENCE -->
 <div id="experience" class='flex-center column-wrap'></div>
 <!-- CONTACT -->
-<div id="contact"'>
-  <form id='contact-form'>
-    <input type='text' name='name' placeholder='Who are you?' />
-    <input type='email' name='email' placeholder='@ eMail @' />
-    <input type='text' name='subject' placeholder='This is about...' />
-    <textarea rows="4" cols="50" name="comment" placeholder='Hi Frank,' form="contact-form">
-      Give me the good news...</textarea>
+  <div id="contact">
 
+    <div id="contact-container">
+      <h1 id='contact-text'>Contact Me</h1>
+      <hr />
 
-    </form>
+      <form id='contact-form'>
 
+        <div class='contact-input-container'>
+          <label for="name" form='contact-form'>  Name:</label>
+          <input type='text' name='name' placeholder='Who are you?' />
+        </div>
+
+        <div class='contact-input-container'>
+          <label for="name" form='contact-form'>eMail:</label>
+          <input type='email' name='email' placeholder='you@yourMail.com' />
+        </div>
+
+        <div class='contact-input-container'>
+          <label for="name" form='contact-form'>Subject:</label>
+          <input type='text' name='subject' placeholder='This is about...' />
+        </div>
+
+        <div class="contact-textarea">
+          <label for='comment' form='contact-form'>Add a comment</label>
+          <textarea name="comment"
+                    rows='4'
+                    placeholder='Hi Frank!'
+                    form="contact-form">
+          </textarea>
+          <button id='contact-form-button' type='submit'>Submit</button>
+        </div>
+      </form>
+    </div>
   </div>
 </main>
 </div>
