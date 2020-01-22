@@ -297,7 +297,12 @@ body {
 
 
 #contact {
+  display: flex;
+  flex-flow: column no-wrap;
   background-color: rgba(34, 139, 34, 0.753);
-  height: 100vh;
+  height: 80vh;
+  left: 16vw;
+  right: 16vw;
+  border: 10px solid black;
 }
 
